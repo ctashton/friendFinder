@@ -1,0 +1,24 @@
+{
+  "name": "friendFinder",
+  "version": "1.0.0",
+  "description": "In this activity, I built a compatibility-based \"FriendFinder\" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.  I will use Express to handle routing. You can check it out here on Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctashton/friendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctashton/friendFinder/issues"
+  },
+  "homepage": "https://github.com/ctashton/friendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
