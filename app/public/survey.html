@@ -16,22 +16,51 @@
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <style>
+      #survey {
+      background-image: url("https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80") ;
+      background-size: cover; 
+      background-color: rgb(131, 131, 131);
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 0 0 0 1000px rgba(225, 225, 225, 0.8);
+      text-align: center;
+      };
+      
+      .inputs{
+        padding: 0px, 80px, 0px, 80px;
+      }
 
+      .btn{
+        color:aliceblue;
+        background-color: rgb(24, 24, 24);
+        width: 50%;
+        margin-left: 25%;
+      }
+  </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="container" id="survey">
 
     <h2>Survey Questions</h2>
     <hr>
 
     <h3><strong>About You</strong></h3>
     <h4>Name (Required)</h4>
-    <input type="text" id="name" class="form-control" required>
-
-    <h4>Link to Photo Image (Required)</h4>
-    <input type="text" id="photo" class="form-control" required>
+    <div class="row" id="about">
+        <div class="col-xs-6 inputs">
+            <h4>Name (Required)</h4>
+    
+            <input type="text" id="name" class="form-control" required>
+        </div> 
+        <div class="col-xs-6 inputs">
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required>
+                </div>    
+   
+    </div>
 
     <hr>
 
@@ -154,7 +183,7 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    <button type="submit" class="btn btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
      Submit</button>
 
     <hr>
